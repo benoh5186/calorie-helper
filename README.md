@@ -38,3 +38,31 @@ For when user first signs up or when user decides to change their goal or when u
 - Ask for user's fitness goal: cut or bulk
 - saves user's info
 - makes api call to get daily calories + steps 
+
+## Schemas
+
+### user
+- user_id: int, not null, incr, primary key
+- email: str, not null
+- password: str, not null, min length = 5
+
+### user_goal
+- goal_id: int, not null, incr, primary key
+- user_id: int, not null, foreign key
+- calories: int, not null
+- macros: json/entity, not null
+- steps: int, not null
+- date: date, not null, default
+- current_weight_kg: number, not null 
+- goal_weight_kg: number, not null
+- current_weight_lbs: number, not null
+- current_weight_kg: number, not null
+
+### daily goal
+- calories_total: int, not null
+- macros_total: json/entity, not null
+- steps_total: int, not null
+- date: date, not null, default
+- goal_id: int, not null, foreign key
+- user_id: int, not null, foreign key 
+
