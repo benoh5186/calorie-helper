@@ -8,8 +8,14 @@ Database: PostgreSQL
 Infrastructure: AWS
 
 ## Features
+Services offered by this app + flow of it
 
 ### Calories 
+- Displays user's daily calories + macros
+- Displays feedback if user is above or under their calories and/or macros
+- Calories resets at the end of the day(12 am)
+- Updates weekly based on user's weekly weigh in
+- Offers user to change daily calories if their fitness goal is not met by deadline
 
 ### Steps
 
