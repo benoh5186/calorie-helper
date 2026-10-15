@@ -46,6 +46,13 @@ For when user first signs up or when user decides to change their goal or when u
 - email: str, not null
 - password: str, not null, min length = 5
 
+### user_info
+- info_id: int, not null, incr, primary key 
+- height: number, not null
+- weight_kg: number, not null
+- weight_lbs: number, not null
+- gender: str, not null
+
 ### user_goal
 - goal_id: int, not null, incr, primary key
 - user_id: int, not null, foreign key
